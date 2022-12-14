@@ -1,23 +1,50 @@
 from math import * # * - kõik funktsioonid moodulist 
 from random import *
-from stringprep import c22_specials
-from tkinter import Pack
+#14/12/22
+#Ülesanne "Ema roobot". 
+#Ema küsib "Mis hinde sa koolis said?", laps vastab ja ootab ema reaktsioon
+print("Ema roobot")
+a=input("Sisesta: ")
+print(a.isalpha(), a.isdigit())
+if a.isdigit() and int(a)>0 and int(a)<=5:
+    a=int(a)
+    if a==5:
+        pass
+    elif a==4:
+        pass
+    elif a==3:
+        pass
+    elif a==2 or a==1:
+        pass
+
+else:
+    print("Sa valesti vastas")
+
 #import math      math.funktsioon()
 #12/12/22
 #1.
 print("Puu läbimõõdu arvutamine")
 #Kirjuta programm, mis küsib kasutaja käest puu ümbermõõdu ning teatab selle peale puu läbimõõdu.
-C=float(input("Anna ümbermõõt: "))
-d=round(C/pi,2)
-print(f"Puu läbimõõt = {d}")
+try:
+    C=float(input("Anna ümbermõõt: "))
+    if C>0:
+        d=round(C/pi,2)
+        print(f"Puu läbimõõt = {d}")
+    else:
+        print("C peab olema suurem kui 0")
+except:
+    print("Andmetüüp on vale")
 
 #2.
 #Arvutage Pythoni käsureal, kui pikk on ristkülikukujulise maatüki diagonaal, mille mõõtmed on Nm x Mm. N ja M küsi kasutajalt.
-N=float(input("Sisesta N: "))
-M=float(input("Sisesta M: "))
-d=round(sqrt(N**2+M**2),2)
-print(f"Ristkülikukujulise maatüki diagonaal on {d}")
-
+try:
+    N=float(input("Sisesta N: "))
+    M=float(input("Sisesta M: "))
+    if M>0 and N>0:
+        d=round(sqrt(N**2+M**2),2)
+        print(f"Ristkülikukujulise maatüki diagonaal on {d}")
+except:
+    print("M ja N vaja sisestada float formaadis")
 #3
 aeg = float(input("Mitu tundi kulus sõiduks? "))
 teepikkus = float(input("Mitu kilomeetrit sõitsid? "))
