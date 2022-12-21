@@ -1,5 +1,76 @@
 from math import * # * - kõik funktsioonid moodulist 
 from random import *
+from time import sleep
+#21/12/22
+a=0
+b=1
+while a!=b:
+    while True:
+        try:
+            a=float(input("Sisesta 1. külg: "))
+            break
+        except:
+            print("Sisesta veel kord")
+    while True:
+        try:
+            b=float(input("Sisesta 2. külg: "))
+            break
+        except:
+            print("Sisesta veel kord")
+    if a!=b: print("Andmetüüb on ok, vaid see ei ole ruud!")
+print(f"See on ruud. Ruudu külg võrdub {a}")
+
+
+print()
+print()
+#n=int(input("Mitu toa korteris? "))
+#for i in range(1,n+1,1): #range(n) i=0,1,2,3,..,n-1
+#    t=float(input(f"{i}. toa temperatuur: "))
+#    if t>18:
+#        print("Soe")
+#    else:
+#        print("Külm")
+#p=k=l=0
+#kogus=randint(1,20) #inimeste kogus
+#print("Kokku on ",kogus,"inimest")
+#for i in range(1,kogus+1,1):
+#    sleep(1)
+#    pikkus=randint(56,256)
+#    if pikkus>178:
+#        print("Pikk")
+#        p+=1
+#    elif pikkus>155 and pikkus<=178:
+#        print("Keskmine")
+#        k+=1
+#    else:
+#        print("Lühike")
+#        l+=1
+#print(f"Pikka kasvu {p} inimest")
+#print(f"Keskmise kasvu {k} inimest")
+#print(f"Lühike kasvu {l} inimest")
+
+p=k=l=0
+kogus=randint(1,20) #inimeste kogus
+print("Kokku on ",kogus,"inimest")
+while kogus>0:
+    kogus-=1
+    sleep(1)
+    pikkus=randint(56,256)
+    if pikkus>178:
+        print("Pikk")
+        p+=1
+    elif pikkus>155 and pikkus<=178:
+        print("Keskmine")
+        k+=1
+    else:
+        print("Lühike")
+        l+=1
+print(f"Pikka kasvu {p} inimest")
+print(f"Keskmise kasvu {k} inimest")
+print(f"Lühike kasvu {l} inimest")
+
+print()
+
 #14/12/22
 #Ülesanne "Ema roobot". 
 #Ema küsib "Mis hinde sa koolis said?", laps vastab ja ootab ema reaktsioon
