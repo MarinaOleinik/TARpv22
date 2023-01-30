@@ -1,6 +1,80 @@
 from math import * # * - kõik funktsioonid moodulist 
 from random import *
 from time import sleep
+nimed=["Anna","Inna","Olga","Anna","Inga","Anna","Juhan"]
+
+nimi=input("Mis nimi on vaja otsida?")
+n=nimed.count(nimi)
+p=0
+for i in range(n):
+    j=nimed.index(nimi,p)
+    p=j+1
+    print(f"{nimi} on {j+1}. kohal")
+
+
+
+
+print()
+
+#09/01/23
+print("While tingimusega:")
+x=0
+while x<30:
+    if x%2==1:
+        print(x, end=" ")
+    x+=1
+print()
+print("Lõpmatu while:")
+x=0
+while True:
+    if x%2==1:
+        print(x, end=" ")
+    x+=1
+    if x==30: break
+print()
+print("For:")
+for x in range(0,30,1):
+    if x%2==1: print(x, end=" ")
+
+
+
+
+
+print("Arvuta peast! ...4*100-55")
+o_vastus=4*100-55
+vastus=int(input("Lahenda ülesanne ..."))
+k=1
+while vastus!=o_vastus:
+    print("Viga! Sisesta Õige vastus on ...", )
+    vastus=int(input("Sisesta vastus ..."))
+    k+=1
+print("Õige vastus! Katsed oli ...",k )
+print()
+
+# 2 variant while True abil
+print("Arvuta peast! ...4*100-55")
+o_vastus=4*100-55
+vastus=int(input("Lahenda ülesanne ..."))
+k=1
+while True:
+    if vastus==o_vastus: 
+        break
+    else:
+        print("Viga! Sisesta Õige vastus on ...", )
+        vastus=int(input("Sisesta vastus ..."))
+        k+=1
+print("Õige vastus! Katsed oli ...",k )
+print()
+
+
+
+
+
+
+
+
+
+
 #21/12/22
 a=0
 b=1
