@@ -1,6 +1,8 @@
 from math import * # * - kõik funktsioonid moodulist 
 from random import *
 from time import sleep
+
+#30.01.23
 nimed=["Anna","Inna","Olga","Anna","Inga","Anna","Juhan"]
 
 nimi=input("Mis nimi on vaja otsida?")

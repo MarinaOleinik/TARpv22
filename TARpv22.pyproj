@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6a4960b5-967f-4144-8ea3-20430c0909a1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>TARpv22.py</StartupFile>
+    <StartupFile>Isikukood.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Isikukood.py" />
+    <Compile Include="OmaMoodul.py" />
     <Compile Include="Sirakus.py" />
     <Compile Include="TARpv22.py" />
   </ItemGroup>
