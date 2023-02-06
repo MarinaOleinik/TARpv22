@@ -60,3 +60,43 @@ def sunnikoht(ikood: str)->str:
 
 def lause(ikood: str)->str:
     print(f"See on {sugu(ikood)} ta on sündinud {sunnipaev(ikood)}, tema sünnikoht on {sunnikoht(ikood)}")
+
+def kontrollnr(ikood:str)->int:
+    astme1=[1,2,3,4,5,6,7,8,9,1]
+    astme2=[3,4,5,6,7,8,9,1,2,3]
+    ik_list=list(ikood)
+    ik_list=list(map(int,ik_list))
+    summa=0
+    for i in range(0,10,1):
+        summa+=ik_list[i]*astme1[i]
+    s=(summa//11)*11
+    jaak=summa-s
+    if jaak==int(ik_list[10]):
+        return jaak
+    elif jaak==10:
+        return 0
+    else:
+        summa=0
+        for i in range(0,10,1):
+            summa+=ik_list[i]*astme2[i]
+        s=(summa//11)*11
+        jaak=summa-s
+        return jaak
+
+def naised_mehed(ikoodid:list)->list:
+    naised=[]
+    mehed=[]
+    for kood in ikoodid:
+        kood_=list(kood)
+        if int(kood_[0])%2==0:
+            naised.append(kood)
+        else:
+            mehed.append(kood)
+    naised.extend(mehed)
+    ikoodid=naised
+    return ikoodid
+
+def arvud_sorted(arvud:list)->list:
+    arvud=list(map(int,arvud)) #[111,3333,2222,3444,222,7]
+    arvud.sort()
+    return arvud
