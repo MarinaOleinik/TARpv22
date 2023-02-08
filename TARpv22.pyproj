@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6a4960b5-967f-4144-8ea3-20430c0909a1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Isikukood.py</StartupFile>
+    <StartupFile>Palgad.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="Isikukood.py" />
     <Compile Include="OmaMoodul.py" />
+    <Compile Include="Palgad.py" />
     <Compile Include="Sirakus.py" />
     <Compile Include="TARpv22.py" />
   </ItemGroup>
