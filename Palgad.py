@@ -1,6 +1,6 @@
 from OmaMoodul import *
-palgad=[1200,2500,750,750,1200]
-inimesed=["A","B","C","D","A"]
+palgad=[1200,2500,750,750,3200,1000]
+inimesed=["A","B","C","D","D","A"]
 while True:
     print(inimesed)
     print(palgad)
@@ -18,3 +18,7 @@ while True:
         inimesed,palgad=Sorteerimine(inimesed,palgad)
     elif menu==6:
         Vordsed_palgad(inimesed,palgad)
+    elif menu==12:
+        palgad,inimesed=Sorteerimine(palgad,inimesed)
+    elif menu==13:
+        inimesed,palgad=Kustuta(inimesed,palgad)

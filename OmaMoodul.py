@@ -1,4 +1,22 @@
 from datetime import date, datetime
+#13/02/23
+def Kustuta(i:list,p:list,):
+    kesk_palk=sum(p)/len(p)
+    print(kesk_palk)
+    v=int(input("Kellel palk 1- on suurem,2-on väiksem?"))
+    if v==1:
+        for palk in p:
+            if palk>kesk_palk:
+                ind=p.index(palk)
+                print(ind)
+                p.remove(palk)
+                i.pop(ind)
+    else:
+        pass
+    return i,p
+
+
+
 #8/02/23
 def Lisa_andmed(i:list,p:list):
     """Kirjeldus....
