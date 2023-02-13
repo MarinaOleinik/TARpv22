@@ -1,5 +1,6 @@
 from datetime import date, datetime
 #13/02/23
+#13
 def Kustuta(i:list,p:list,):
     kesk_palk=sum(p)/len(p)
     print(kesk_palk)
@@ -12,12 +13,13 @@ def Kustuta(i:list,p:list,):
                 p.remove(palk)
                 i.pop(ind)
     else:
-        pass
+        pass#lisa siia enda koodi
     return i,p
 
 
 
 #8/02/23
+#1
 def Lisa_andmed(i:list,p:list):
     """Kirjeldus....
     :param list i: Inimeste järjend
@@ -31,6 +33,7 @@ def Lisa_andmed(i:list,p:list):
         i.append(nimi)
         p.append(palk)
     return i,p
+#2
 def Kustutamine(i:list,p:list):
     """Kirjeldus....
     :param list i: Inimeste järjend
@@ -46,6 +49,7 @@ def Kustutamine(i:list,p:list):
             p.pop(ind)
 
     return i,p
+#3
 def Suurim_palk(i:list,p:list):
     """Kirjeldus....
     :param list i: Inimeste järjend
@@ -58,7 +62,7 @@ def Suurim_palk(i:list,p:list):
     nimi=i[ind]
 
     return palk,nimi
-
+#5
 def Sorteerimine(i:list,p:list):
     """Kirjeldus....kirjuta ise!!!
     :param list i: Inimeste järjend
@@ -90,6 +94,7 @@ def Sorteerimine(i:list,p:list):
                     i[k]=abi
 
     return i,p
+#6
 def Vordsed_palgad(i:list,p:list):
     """Kirjeldus....kirjuta ise!!!
     :param list i: Inimeste järjend
